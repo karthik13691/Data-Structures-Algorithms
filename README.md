@@ -17,7 +17,7 @@ Each data structure is implemented in multiple programming languages, such as Ja
 ## Algorithms
 The algorithms section covers a wide range of topics, including:
 
-* Sorting Algorithms (e.g., Bubble Sort, Merge Sort, Quick Sort, Insertion Sort)
+* Sorting Algorithms (e.g., Bubble Sort, Insertion Sort, Merge Sort, Quick Sort)
 * Searching Algorithms (e.g., Linear Search, Binary Search)
 * Graph Algorithms (e.g., Breadth-First Search, Depth-First Search, Dijkstra's Algorithm)
 * Dynamic Programming
