@@ -1,0 +1,8 @@
+Creating and working with ArrayLists to simulate a basic seat booking system for a movie theater. 
+
+The system allows customers to book a seat, cancel their reservation, or check if a seat is booked. 
+Additionally, it displays the seat's current status.
+
+Building the core functionality of the seat reservation system, starting with a simple Seat class. 
+Adding new bookings, removing bookings, updating bookings, and displaying bookings. 
+
