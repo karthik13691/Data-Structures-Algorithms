@@ -28,6 +28,7 @@ The algorithms section covers a wide range of topics, including:
 Like the data structures, the algorithms are implemented in various programming languages.
 
 Credits: 
-https://www.coursera.org/learn/developer-data-structures-and-algorithms
-https://www.coursera.org/learn/data-structures--backend-with-java?specialization=java-fullstack
+
+* https://www.coursera.org/learn/developer-data-structures-and-algorithms
+* https://www.coursera.org/learn/data-structures--backend-with-java?specialization=java-fullstack
 
