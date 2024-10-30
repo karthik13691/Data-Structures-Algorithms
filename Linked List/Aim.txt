@@ -1,0 +1,8 @@
+Unlike arrays and ArrayLists, which are efficient for accessing elements by index but cumbersome for frequent additions or removals, linked lists offer a more flexible solution for an optimal user experience. With linked lists, we can remove a song by simply updating a few references – without needing to shift other elements around.
+
+In this project, I implement single and double linked lists, which offer more efficient modifications and enhanced navigation capabilities than arrays. Run tasks such as adding, removing, and displaying items in a singly linked list. Then, extend these functionalities to a doubly linked list, enabling both forward and backward navigation. These skills are essential for managing dynamic data efficiently in various real-world applications, such as managing playlists, browser history navigation, and job scheduling systems.
+
+
+Goal:
+Implement fundamental operations in a playlist management system using singly and doubly linked lists. Enable functionality to add, remove, and display songs, and navigate through the list.
+
