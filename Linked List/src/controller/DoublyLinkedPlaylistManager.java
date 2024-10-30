@@ -1,6 +1,6 @@
-package controller;
+package com.lesson.lab.controller;
 
-import model.Song;
+import com.lesson.lab.model.Song;
 
 /**
  * The DoublyLinkedPlaylistManager class manages a playlist of songs using a doubly linked list structure.
@@ -48,7 +48,7 @@ public class DoublyLinkedPlaylistManager {
                 last = last.next;
             }
             last.next = newNode;
-            //TODO 21: set the previous reference of the new node to the last node
+            newNode.previous = last; // Set the previous reference
         }
         System.out.println(newSong.getTitle() + " added to the playlist.");
     }
@@ -79,7 +79,7 @@ public class DoublyLinkedPlaylistManager {
             System.out.println(head.song.getTitle() + " removed from the playlist.");
             head = head.next;
             if (head != null) {
-                // TODO 22: updates the previous reference of the head with null if the first node is removed.
+                head.previous = null; // Update the previous reference
             }
             return;
         }
@@ -94,10 +94,10 @@ public class DoublyLinkedPlaylistManager {
         } else {
             System.out.println(current.song.getTitle() + " removed from the playlist.");
             if (current.previous != null) {
-                //TODO 23: update the next reference of the previous node to skip over the current node.
+                current.previous.next = current.next; // Adjust previous node's next
             }
             if (current.next != null) {
-                //TODO 24: update the previous reference of the next node to point to the previous node of the current node.
+                current.next.previous = current.previous; // Adjust next node's previous
             }
         }
     }
@@ -129,10 +129,12 @@ public class DoublyLinkedPlaylistManager {
 
     // Method to play the previous song in the playlist
     public void playPreviousFavoriteSong() {
-        //TODO 25: checks if the current node is null or if current.previous is null
-        // If no previous song exists, print a message indicating playlist is empty
-        //TODO 26: sets current to current.previous
-        //TODO 27: print the song that is now playing
+        if (current == null || current.previous == null) {
+            System.out.println("No previous song in the playlist.");
+        } else {
+            current = current.previous;
+            System.out.println("Now playing: " + current.song);
+        }
     }
     // Method to start playing from the first song in the playlist
     public void setCurrentToFirst() {
@@ -148,4 +150,5 @@ public class DoublyLinkedPlaylistManager {
         return head == null;
     }
 }
+
 

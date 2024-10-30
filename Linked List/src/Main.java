@@ -1,13 +1,15 @@
-import controller.DoublyLinkedPlaylistManager;
-import controller.SinglyLinkedPlaylistManager;
-import model.Song;
+package com.lesson.lab;
+
+import com.lesson.lab.controller.DoublyLinkedPlaylistManager;
+import com.lesson.lab.controller.SinglyLinkedPlaylistManager;
+import com.lesson.lab.model.Song;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //TODO 19: uncomment below code to run Doubly linked list code
+        // uncomment below code to run Doubly linked list code
         // DoublyLinkedPlaylistManager playlistManager = new  DoublyLinkedPlaylistManager();
 
         // uncomment below code to run singly linked list code
@@ -88,7 +90,7 @@ public class Main {
                     playlistManager.playNextFavoriteSong();
                     break;
                 case 5:
-                    // TODO 20: uncomment this when run the doubly linked list
+                    // uncomment this when run the doubly linked list
                     //move to the previous song in the playlist
                     // playlistManager.playPreviousFavoriteSong();
                     break;
